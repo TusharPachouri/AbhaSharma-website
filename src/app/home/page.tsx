@@ -48,76 +48,76 @@ export default function HomePage() {
           className="absolute inset-0 z-0"
           style={{
             transform: `translateY(${scrollY * 0.5}px)`,
-            backgroundImage: `url('https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80')`,
+            backgroundImage: `url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed'
           }}
         />
         
-        {/* Personal Yoga Pose Image - Replace this URL with your own photo */}
-        <div 
-          className="absolute inset-0 z-1"
-          style={{
-            transform: `translateY(${scrollY * 0.3}px)`,
-            backgroundImage: `url('https://images.unsplash.com/photo-1506629905607-d8074bacbb22?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80')`,
-            backgroundSize: 'contain',
-            backgroundPosition: 'bottom right',
-            backgroundRepeat: 'no-repeat',
-            opacity: '0.8'
-          }}
-        />
-        
         {/* Animated Background Images */}
         <div className="absolute inset-0 z-5">
-          {/* Floating yoga elements - smaller and more subtle to complement main image */}
+          {/* Floating yoga poses */}
           <div 
-            className="absolute top-16 left-8 w-20 h-20 opacity-15"
+            className="absolute top-20 left-10 w-32 h-32 opacity-20"
             style={{
-              transform: `translateY(${scrollY * 0.2}px) rotate(${scrollY * 0.05}deg)`,
+              transform: `translateY(${scrollY * 0.3}px) rotate(${scrollY * 0.1}deg)`,
             }}
           >
-            <div className="w-full h-full bg-gradient-to-br from-emerald-400 to-teal-400 rounded-full flex items-center justify-center shadow-lg">
-              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
+            <img 
+              src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+              alt="Yoga pose silhouette"
+              className="w-full h-full object-cover rounded-full border-4 border-white border-opacity-30"
+            />
           </div>
           
           <div 
-            className="absolute top-1/4 right-12 w-16 h-16 opacity-20"
+            className="absolute top-32 right-16 w-24 h-24 opacity-25"
             style={{
-              transform: `translateY(${scrollY * -0.15}px) rotate(${scrollY * -0.03}deg)`,
+              transform: `translateY(${scrollY * -0.2}px) rotate(${scrollY * -0.05}deg)`,
             }}
           >
-            <div className="w-full h-full bg-gradient-to-br from-teal-400 to-emerald-400 rounded-full flex items-center justify-center shadow-lg">
-              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
-              </svg>
-            </div>
+            <img 
+              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+              alt="Meditation silhouette"
+              className="w-full h-full object-cover rounded-full border-4 border-emerald-300 border-opacity-40"
+            />
           </div>
           
           <div 
-            className="absolute bottom-1/3 left-16 w-24 h-24 opacity-12"
+            className="absolute bottom-32 left-20 w-28 h-28 opacity-15"
             style={{
-              transform: `translateY(${scrollY * 0.3}px) rotate(${scrollY * 0.08}deg)`,
+              transform: `translateY(${scrollY * 0.4}px) rotate(${scrollY * 0.08}deg)`,
             }}
           >
-            <div className="w-full h-full bg-gradient-to-br from-white to-emerald-200 rounded-full flex items-center justify-center shadow-lg opacity-50">
-              <svg className="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              </svg>
-            </div>
+            <img 
+              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+              alt="Yoga balance pose"
+              className="w-full h-full object-cover rounded-full border-4 border-teal-300 border-opacity-30"
+            />
+          </div>
+          
+          <div 
+            className="absolute bottom-40 right-12 w-36 h-36 opacity-20"
+            style={{
+              transform: `translateY(${scrollY * -0.3}px) rotate(${scrollY * -0.12}deg)`,
+            }}
+          >
+            <img 
+              src="https://images.unsplash.com/photo-1549576490-b0b4831ef60a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+              alt="Yoga flow pose"
+              className="w-full h-full object-cover rounded-full border-4 border-white border-opacity-25"
+            />
           </div>
         </div>
 
         {/* Animated Geometric Shapes */}
         <div className="absolute inset-0 z-6 overflow-hidden">
-          {/* Subtle floating elements */}
+          {/* Floating lotus petals */}
           <div 
-            className="absolute top-1/3 left-1/4 w-12 h-12 opacity-8"
+            className="absolute top-1/4 left-1/4 w-16 h-16 opacity-10"
             style={{
-              transform: `translateY(${scrollY * 0.1}px) translateX(${Math.sin(scrollY * 0.008) * 15}px)`,
+              transform: `translateY(${scrollY * 0.15}px) translateX(${Math.sin(scrollY * 0.01) * 20}px)`,
             }}
           >
             <svg viewBox="0 0 100 100" className="w-full h-full text-emerald-300 fill-current">
@@ -126,21 +126,20 @@ export default function HomePage() {
           </div>
           
           <div 
-            className="absolute top-1/2 right-1/3 w-8 h-8 opacity-10"
+            className="absolute top-1/2 right-1/4 w-12 h-12 opacity-15"
             style={{
-              transform: `translateY(${scrollY * -0.12}px) translateX(${Math.cos(scrollY * 0.01) * 20}px)`,
+              transform: `translateY(${scrollY * -0.2}px) translateX(${Math.cos(scrollY * 0.015) * 30}px)`,
             }}
           >
-            <svg viewBox="0 0 100 100" className="w-full h-full text-teal-200 fill-current">
-              <circle cx="50" cy="50" r="35" />
+            <svg viewBox="0 0 100 100" className="w-full h-full text-teal-300 fill-current">
+              <circle cx="50" cy="50" r="40" />
             </svg>
           </div>
           
-          {/* Breath-like pulsing elements */}
           <div 
-            className="absolute bottom-1/4 right-1/4 w-16 h-16 opacity-6"
+            className="absolute bottom-1/4 left-1/3 w-20 h-20 opacity-8"
             style={{
-              transform: `scale(${1 + Math.sin(scrollY * 0.02) * 0.1}) rotate(${scrollY * 0.15}deg)`,
+              transform: `translateY(${scrollY * 0.25}px) rotate(${scrollY * 0.2}deg)`,
             }}
           >
             <svg viewBox="0 0 100 100" className="w-full h-full text-white fill-current">
@@ -149,21 +148,9 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Premium Image Overlay */}
-        <div 
-          className="absolute inset-0 z-8"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            transform: `translateY(${scrollY * 0.2}px)`,
-            opacity: '0.15'
-          }}
-        />
-        
-        {/* Subtle gradient overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-transparent to-teal-900 opacity-40 z-9" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50 z-10" />
+        {/* Enhanced Overlay with Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-transparent to-emerald-900 opacity-60 z-10" />
+        <div className="absolute inset-0 bg-black bg-opacity-30 z-10" />
         
         {/* Hero Content */}
         <div className={`relative z-20 text-center text-white px-4 transform transition-all duration-1000 ${isVisible.hero ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'}`}>
@@ -195,61 +182,8 @@ export default function HomePage() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 px-4 relative overflow-hidden">
-        {/* Animated Background Image */}
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1588286840104-8957b019727f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            transform: `translateY(${scrollY * 0.3}px)`,
-            backgroundAttachment: 'fixed'
-          }}
-        />
-        
-        {/* Overlay for readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-white via-white to-emerald-50 opacity-85 z-5" />
-        
-        {/* Moving geometric elements */}
-        <div className="absolute inset-0 z-10">
-          <div 
-            className="absolute top-20 right-20 w-40 h-40 opacity-10"
-            style={{
-              transform: `translateY(${scrollY * 0.15}px) rotate(${scrollY * 0.05}deg)`,
-            }}
-          >
-            <svg viewBox="0 0 200 200" className="w-full h-full text-emerald-300 fill-current">
-              <circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" strokeWidth="2" strokeDasharray="10,5"/>
-              <circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="5,3"/>
-              <circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="3,2"/>
-            </svg>
-          </div>
-          
-          <div 
-            className="absolute bottom-32 left-16 w-32 h-32 opacity-8"
-            style={{
-              transform: `translateY(${scrollY * -0.2}px) rotate(${scrollY * -0.08}deg)`,
-            }}
-          >
-            <svg viewBox="0 0 100 100" className="w-full h-full text-teal-400 fill-current">
-              <path d="M50 10 L90 35 L75 85 L25 85 L10 35 Z" fill="none" stroke="currentColor" strokeWidth="2"/>
-            </svg>
-          </div>
-          
-          <div 
-            className="absolute top-1/2 left-10 w-24 h-24 opacity-12"
-            style={{
-              transform: `translateX(${Math.sin(scrollY * 0.01) * 20}px) scale(${1 + Math.sin(scrollY * 0.02) * 0.1})`,
-            }}
-          >
-            <svg viewBox="0 0 100 100" className="w-full h-full text-emerald-500 fill-current">
-              <path d="M50 5 C70 25, 70 75, 50 95 C30 75, 30 25, 50 5 Z" opacity="0.3"/>
-            </svg>
-          </div>
-        </div>
-
-        <div className="max-w-7xl mx-auto relative z-20">
+      <section id="about" className="py-24 px-4 bg-gradient-to-br from-gray-50 to-emerald-50">
+        <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className={`transform transition-all duration-1000 delay-300 ${isVisible.about ? 'translate-x-0 opacity-100' : '-translate-x-12 opacity-0'}`}>
               <div className="relative">
@@ -276,7 +210,7 @@ export default function HomePage() {
                 At Serene Yoga, we believe that yoga is more than just physical postures—it's a pathway to holistic wellness that nurtures your body, mind, and spirit. Our experienced instructors guide you through transformative practices that honor ancient traditions while meeting modern needs.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                Whether you&#39;re a beginner taking your first steps or an experienced practitioner deepening your practice, our supportive community welcomes you with open arms and open hearts.
+                Whether you're a beginner taking your first steps or an experienced practitioner deepening your practice, our supportive community welcomes you with open arms and open hearts.
               </p>
               
               <div className="grid grid-cols-2 gap-6 mb-8">
