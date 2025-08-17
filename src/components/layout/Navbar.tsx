@@ -44,22 +44,6 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/retreats"
-              className="text-sm font-medium tracking-wide text-gray-700 hover:text-emerald-700 transition-all duration-300 relative group uppercase"
-            >
-              RETREATS
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-600 group-hover:w-full transition-all duration-300"></span>
-            </Link>
-
-            <Link
-              href="/virtual"
-              className="text-sm font-medium tracking-wide text-gray-700 hover:text-emerald-700 transition-all duration-300 relative group uppercase"
-            >
-              VIRTUAL YOGA
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-emerald-600 group-hover:w-full transition-all duration-300"></span>
-            </Link>
-
-            <Link
               href="/blog"
               className="text-sm font-medium tracking-wide text-gray-700 hover:text-emerald-700 transition-all duration-300 relative group uppercase"
             >
@@ -118,18 +102,7 @@ export default function Navbar() {
           >
             CLASSES
           </Link>
-          <Link
-            href="/retreats"
-            className="block text-gray-700 hover:text-emerald-700 py-2 text-sm font-medium tracking-wide uppercase transition-colors duration-300"
-          >
-            RETREATS
-          </Link>
-          <Link
-            href="/virtual"
-            className="block text-gray-700 hover:text-emerald-700 py-2 text-sm font-medium tracking-wide uppercase transition-colors duration-300"
-          >
-            VIRTUAL YOGA
-          </Link>
+          
           <Link
             href="/blog"
             className="block text-gray-700 hover:text-emerald-700 py-2 text-sm font-medium tracking-wide uppercase transition-colors duration-300"
