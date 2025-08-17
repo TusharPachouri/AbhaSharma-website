@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 export default function HomePage() {
   const [scrollY, setScrollY] = useState(0);
-  const [isVisible, setIsVisible] = useState({});
+  const [isVisible, setIsVisible] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -11,7 +11,7 @@ export default function HomePage() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const fadeInOnScroll = (elementId) => {
+  const fadeInOnScroll = (elementId: string) => {
     const element = document.getElementById(elementId);
     if (element) {
       const rect = element.getBoundingClientRect();
@@ -273,7 +273,7 @@ export default function HomePage() {
               </h2>
               <div className="h-1 bg-gradient-to-r from-emerald-600 to-teal-500 w-20 mb-8"></div>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                At Serene Yoga, we believe that yoga is more than just physical postures—it's a pathway to holistic wellness that nurtures your body, mind, and spirit. Our experienced instructors guide you through transformative practices that honor ancient traditions while meeting modern needs.
+                At Serene Yoga, we believe that yoga is more than just physical postures-it&#39;s a pathway to holistic wellness that nurtures your body, mind, and spirit. Our experienced instructors guide you through transformative practices that honor ancient traditions while meeting modern needs.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
                 Whether you&#39;re a beginner taking your first steps or an experienced practitioner deepening your practice, our supportive community welcomes you with open arms and open hearts.
@@ -413,7 +413,7 @@ export default function HomePage() {
                   ))}
                 </div>
                 
-                <p className="text-gray-700 leading-relaxed italic">"{testimonial.content}"</p>
+                <p className="text-gray-700 leading-relaxed italic">&quot;{testimonial.content}&quot;</p>
               </div>
             ))}
           </div>
