@@ -11,7 +11,7 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <Link href="/" className="group">
               <h1 className="text-2xl md:text-3xl font-light tracking-wider text-gray-900 group-hover:text-emerald-700 transition-colors duration-300">
-                SERENE YOGA
+                ABHA SHARMA
               </h1>
               <div className="h-0.5 bg-gradient-to-r from-emerald-600 to-teal-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left mt-1"></div>
             </Link>
